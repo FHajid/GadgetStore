@@ -1,0 +1,195 @@
+* {
+  font-family: "Poppins", "Inter";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+/* MAIN START */
+.Main-home {
+  width: 100%;
+  height: auto; /* Let the height adjust dynamically */
+}
+
+/* Upper Section with Carousel and Text */
+.home-upper-iklan {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0px;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+
+.iklan-text {
+  width: 20%;
+  border-right: 2px solid grey;
+  min-width: 150px; /* Ensure a minimum width on smaller screens */
+}
+
+.iklan-text ul li {
+  margin: 5px 0px;
+  font-size: 24px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.iklan-gambar {
+  margin: 0px 20px;
+  width: 60%;
+  min-width: 250px; /* Ensure a minimum width */
+}
+
+@media (max-width: 768px) {
+  .iklan-gambar {
+      width: 100%; /* Make carousel full width on mobile */
+      height: auto;
+  }
+
+  .iklan-text {
+      display: none; /* Hide the text on mobile for simplicity */
+  }
+
+  .home-upper-iklan {
+      margin: 20px 0; /* Adjust margin */
+  }
+}
+
+/* TEXT */
+.hot-sale {
+  margin-top: 20px;
+  margin-left: 90px;
+  display: flex;
+}
+
+.hot-sale h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: rgb(219, 68, 68);
+}
+
+.rectangle {
+  width: 20px;
+  height: 50px;
+  background-color: rgb(219, 68, 68);
+  border-radius: 20px;
+}
+
+.best-product {
+  text-align: left;
+  margin-left: 129px;
+}
+
+/* Carousel Section */
+.home-carusel-item {
+  width: 100%;
+  height: 600px;
+}
+
+/* Categories Section */
+.home-categori {
+  width: 80%;
+  justify-content: center;
+  margin: 0px auto;
+  border-bottom: 1px solid grey;
+}
+
+.grup-cata {
+  margin: 0px auto;
+  padding: 20px 0px;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center on mobile */
+}
+
+.cata {
+  width: 165px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  background: white;
+  font-size: 50px;
+  border: 2px solid rgb(193, 193, 193);
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cata p {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(122, 122, 122);
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .grup-cata {
+      flex-wrap: wrap; /* Stack categories */
+      justify-content: center;
+  }
+
+  .cata {
+      width: 120px;
+      height: 150px;
+      font-size: 40px;
+  }
+
+  .cata p {
+      font-size: 14px;
+  }
+}
+
+/* Home ITEMS Section */
+.home-items {
+  margin-top: 50px;
+}
+
+.Items-produck {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: hidden; /* Hide the scrollbar */
+  cursor: grab; /* Show grab cursor */
+  padding: 20px 0;
+  gap: 20px; /* Space between items */
+}
+
+.Items-produck:active {
+  cursor: grabbing; /* Show grabbing cursor when dragging */
+}
+
+/* Prevent text selection while dragging */
+.Items-produck * {
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .Items-produck {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 20px 0;
+    gap: 20px; /* Space between items */
+  }
+
+  .Items-produck > div {
+    flex: 0 0 60%; /* Each item takes up 60% of the viewport width */
+  }
+}
+
+@media (max-width: 480px) {
+  .Items-produck > div {
+    flex: 0 0 80%; /* Each item takes up 80% of the viewport width on small screens */
+  }
+
+  .Items-produck {
+    padding: 10px;
+    gap: 15px;
+  }
+}

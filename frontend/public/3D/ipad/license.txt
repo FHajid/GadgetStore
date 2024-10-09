@@ -1,0 +1,11 @@
+Model Information:
+* title:	Apple Ipad Pro 2020
+* source:	https://sketchfab.com/3d-models/apple-ipad-pro-2020-6c744f3da64247cfb2a0cbfeaf361c87
+* author:	ArjB (https://sketchfab.com/arjunbalan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Apple Ipad Pro 2020" (https://sketchfab.com/3d-models/apple-ipad-pro-2020-6c744f3da64247cfb2a0cbfeaf361c87) by ArjB (https://sketchfab.com/arjunbalan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

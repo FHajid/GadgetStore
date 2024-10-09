@@ -1,0 +1,98 @@
+/* Main container for categories */
+.categories-main {
+    padding: 20px;
+    height: auto; /* Adjust height dynamically */
+}
+
+/* Category group styling remains unchanged */
+.home-categories {
+    margin-bottom: 20px;
+    height: 300px;
+    border-bottom: 1px solid grey;
+}
+
+.grup-cata {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cata {
+    font-size: 22px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    height: 180px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px;
+    flex: 1 1 calc(10% - 10px);
+}
+
+.cata:hover {
+    background-color: #e9ecef;
+    transform: scale(1.05);
+}
+
+.cata i {
+    font-size: 94px;
+    color: #007bff;
+}
+
+.cata p {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Styling for product cards */
+.ProductCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    justify-content: center; /* Center the grid items */
+}
+
+/* Scrollable Product Items */
+.Items-produck {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scroll */
+    padding: 20px 0;
+    gap: 20px; /* Space between items */
+    scroll-behavior: smooth;
+}
+
+.Items-produck::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+.Items-produck > div {
+    flex: 0 0 300px; /* Each item takes up 300px of width */
+}
+
+/* Responsive for mobile devices */
+@media (max-width: 768px) {
+    /* Items-produck on mobile becomes horizontally scrollable */
+    .Items-produck {
+        padding: 20px 10px;
+        gap: 10px; /* Less gap on mobile */
+    }
+
+    .Items-produck > div {
+        flex: 0 0 70%; /* Each product takes 70% of the viewport width on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .Items-produck > div {
+        flex: 0 0 80%; /* Each product takes 80% of the viewport width on very small screens */
+    }
+
+    .Items-produck {
+        padding: 10px;
+        gap: 15px;
+    }
+}

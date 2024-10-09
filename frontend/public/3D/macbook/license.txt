@@ -1,0 +1,11 @@
+Model Information:
+* title:	Macbook Pro
+* source:	https://sketchfab.com/3d-models/macbook-pro-a2158f4d07c24861b268b170cb24c6d8
+* author:	jc1245 (https://sketchfab.com/jasperchui2007)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Macbook Pro" (https://sketchfab.com/3d-models/macbook-pro-a2158f4d07c24861b268b170cb24c6d8) by jc1245 (https://sketchfab.com/jasperchui2007) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

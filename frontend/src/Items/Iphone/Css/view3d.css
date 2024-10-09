@@ -1,0 +1,21 @@
+
+
+/* view3d.css */
+.canvas-container {
+  width: 100%;
+  height: 600px; /* Adjust height as needed */
+}
+
+.main3d {
+  position: relative; /* Required for absolute positioning */
+  
+}
+
+.main3d i {
+  position: relative;
+
+  top: 10px; 
+  left: 200vh; 
+  font-size: 62px; 
+  color: #000; 
+}

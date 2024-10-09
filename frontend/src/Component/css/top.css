@@ -1,0 +1,20 @@
+.top {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    align-items: center;
+}
+
+.admin-header {
+    width: 100%; /* Take the full width */
+    display: flex;
+    justify-content: flex-end; /* Space between elements */
+    align-items: center; /* Center vertically */
+    padding: 0 20px; /* Add some padding */
+}
+
+.bi-person-circle, .bi-envelope {
+    margin-left: 10px; /* Space between icons */
+    cursor: pointer; /* Pointer cursor for clickable icons */
+}

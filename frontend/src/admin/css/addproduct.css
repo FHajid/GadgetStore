@@ -1,0 +1,70 @@
+/* Global styles for the admin product page */
+.main-addproduct-admin {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+
+
+/* Rest of the page styling */
+.restof {
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form container */
+.restof h2 {
+    margin-bottom: 20px;
+    color: #1e2753;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Form styling */
+
+/* Button styling */
+
+
+/* Success and error message styles */
+.success-message {
+    color: #28a745;
+    font-size: 16px;
+    text-align: center;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 16px;
+    text-align: center;
+}
+
+.add-product1{
+    width: 80%;
+    margin: 20px auto;
+    
+}
+
+.back-to{
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .restof {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    form {
+        width: 100%;
+    }
+}
