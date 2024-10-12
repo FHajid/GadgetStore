@@ -58,7 +58,7 @@ function Contact() {
                         <h2>Our Location</h2>
                         <p>Jalan Mujur, Batam, 20234, Indonesia.</p>
                         <p>Email: Exclusive.ect@gmail.com</p>
-                        <p>Phone: +62 892 2345 7123</p>
+                        <p>Phone: +62 892 2345 7123asdasd</p>
                     </div>
                 </div>
 
