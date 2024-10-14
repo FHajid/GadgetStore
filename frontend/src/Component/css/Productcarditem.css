@@ -57,7 +57,7 @@
 @media (max-width: 768px) {
     .card {
         max-width: 100%; /* Make the cards take full width on mobile */
-        margin: 0 auto; /* Center the cards */
+        margin: 10px auto; /* Center the cards with less margin */
     }
 
     .card-img-top {
@@ -81,7 +81,7 @@
 @media (max-width: 480px) {
     .card {
         max-width: 100%; /* Ensure cards take full width on small screens */
-        margin: 0 auto; /* Keep them centered on mobile */
+        margin: 5px auto; /* Keep them centered with minimal margin */
     }
 
     .card-img-top {
