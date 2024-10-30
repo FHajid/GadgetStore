@@ -32,6 +32,7 @@ function About(){
             </div>
         {/* mid start */}
         <div class="mid">
+            <div className="cardmen-container">
             <div class="cardmen">
                 <i id="money" class="bi bi-person-check" style={{color:'white'}} ></i>   
                 <h2>10,3 K</h2>
@@ -56,7 +57,7 @@ function About(){
                 <h2>8,2 k</h2>
                 <h3> Annual Gross Sales </h3>
             </div>
-
+            </div>
 
         </div>
 
@@ -86,8 +87,10 @@ function About(){
         {/* stripe3 */}
 
         <div class="stripe-3">
-
+        
+        <div className="cardmen-container">
             <div class="cardmen">
+            
             <img id="money" src="/Picture/Icon/icon-delivery.png" alt="Delivery Icon"/>
            
             <h3>Delivery system</h3>
@@ -106,8 +109,9 @@ function About(){
                 
                 <h3> Powerfull website </h3>
 
+            
             </div>
-
+            </div>
         </div>
 
         </div>
