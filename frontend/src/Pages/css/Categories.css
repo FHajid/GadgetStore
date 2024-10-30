@@ -61,23 +61,23 @@
         display: flex; /* Switch to flexbox on mobile */
         flex-direction: column; /* Stack items vertically */
         overflow-y: auto; /* Enable vertical scrolling */
-        max-height: 90vh; /* Limit the height to fit within the viewport */
+        max-height: none; /* Remove the height restriction */
         padding: 20px 10px; /* Adjust padding for mobile */
         gap: 10px; /* Less gap on mobile */
     }
 
     .ProductCard > div {
-        flex: 0 0 250px; /* Each product takes up 150px of height on mobile */
-        min-width: 250px; /* Set a minimum width for better visibility */
+        flex: 0 0 auto; /* Allow products to expand based on content */
+        min-width: 100%; /* Make sure it takes full width */
         box-sizing: border-box; /* Ensure padding is included in width */
     }
 }
 
 @media (max-width: 500px) {
     .ProductCard > div {
-        flex: 0 0 250px; /* Each product takes 120px of height on very small screens */
-        min-width: 250px; /* Set a minimum width for better visibility */
-        min-height: 450px;
+        flex: 0 0 auto; /* Allow products to expand based on content */
+        min-width: 70%; /* Ensure full width on smaller screens */
+        min-height: auto; /* Remove fixed height to prevent cutting */
     }
 
     .ProductCard {

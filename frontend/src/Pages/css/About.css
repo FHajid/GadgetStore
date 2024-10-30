@@ -55,6 +55,10 @@
     
   }
   
+  .cardmen-container{
+    display: flex;
+  }
+
   .cardmen{
     width: 270px;
     height: 210px;
@@ -74,6 +78,8 @@
   
   #money {
     font-size: 35px;
+    width: 85px;
+    height: 85px;
     size: 35px;
     padding: 10px;
     margin: 0px;
@@ -124,3 +130,113 @@
 .stripe-3, .cardmen {
   border: none;
 }
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .Main {
+      height: auto;
+  }
+
+  .above {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+      padding: 20px;
+  }
+
+  .about-us, .pic-left {
+      width: 90%;
+      height: auto;
+      margin: 10px auto;
+  }
+
+  .pic-left img {
+      width: 100%; /* Make image responsive */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 20px; /* Keep the same border radius */
+  }
+
+  .mid {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0;
+  }
+
+  /* Container for cardmen to enable flex layout */
+
+.cardmen {
+  width: 100%; /* Full width on mobile */
+  max-width: 200px; /* Set a maximum width for individual cards */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+ /* Adjust font size for smaller screens */
+ .cardmen h2 {
+  font-size: 18px; /* Smaller font size for mobile */
+}
+
+.cardmen h3 {
+  font-size: 16px; /* Smaller font size for mobile */
+}
+
+  .mid2 {
+      flex-direction: column;
+      display: flex;
+      height: auto;
+      padding: 20px 0;
+  }
+
+  .card-ceo {
+    width: 50%;
+    height: auto;
+    margin: 0 auto 20px; /* Centers horizontally and adds space at the bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text content */
+}
+
+  .stripe-3 {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0;
+      
+  }
+
+  /* Adjust #money to display flexibly side by side */
+  .money-container {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+      gap: 10px; /* Add space between items */
+      justify-content: center; /* Center items */
+      padding: 10px;
+  }
+
+  #money {
+      font-size: 20px; /* Smaller font size */
+      width: 55px; /* Smaller width */
+      height: 55px; /* Smaller height */
+      padding: 5px;
+      margin: 5px; /* Add margin between items */
+  }
+
+  /* Worker section styling */
+  #worker {
+      width: 90%;
+      margin: 20px auto;
+      text-align: center;
+  }
+
+  #worker img {
+      width: 10%;
+      height: auto;
+      border-radius: 15px; /* Optional: adjust to match design */
+  }
+
+  #worker  .description {
+      margin-top: 15px;
+      font-size: 16px;
+  }   
+}
+

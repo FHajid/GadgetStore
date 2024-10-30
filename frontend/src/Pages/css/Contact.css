@@ -19,20 +19,20 @@
 
 }
 
-.card{
+.cardcont{
   width: 100%;
   height: auto;
 }
 
-.card .Line{
+.cardcont .Line{
   margin:20px ;
   
 }
 
-.card h2 {
+.cardcont h2 {
   padding: 10px 0px 25px 0px ;
 }
-.card p{
+.cardcont p{
   padding: 5px;
 }
 
@@ -112,4 +112,35 @@
   background: rgb(219, 68, 68);
   color: white;
   border-radius: 8px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-contact {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+  }
+
+  .contact-container-left, .contact-container-right {
+      width: 100%;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 1px 1px 20px 1px rgba(165, 165, 165, 0.4);
+  }
+
+  .name-input input, .email-input input, .text-input textarea {
+      font-size: 15px;
+      height: 40px;
+  }
+
+  .text-input textarea {
+      height: 150px;
+  }
+
+  .ok-btn button {
+      width: 100%;
+      font-size: 20px;
+      height: 40px;
+      margin: 10px 0;
+  }
 }

@@ -50,7 +50,7 @@ function Contact() {
             <Logheader />
             <div className="main-contact">
                 <div className="contact-container-left">
-                    <div className="card" style={{ border: "none" }}>
+                    <div className="cardcont" style={{ border: "none" }}>
                         <h2>Our Contact</h2>
                         <p>We are available 24/7</p>
                         <p>With 24 Hour respond time</p>
