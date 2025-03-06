@@ -239,3 +239,72 @@
     align-items: center; /* Center vertically */
   }
 }
+
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-trigger {
+  position: absolute;
+  top: -35px;
+  right: -30px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.2s; /* Smooth transition for color change */
+}
+
+.dropdown-trigger:hover {
+  color: #ff0000;
+}
+
+.dropdown-drop {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 50px; /* Adjusted to ensure dropdown is visible */
+  right: 0;
+  width: 150px; /* Increased width for better readability */
+  background-color: #b8b8b8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  z-index: 1000; /* Ensure dropdown is above other elements */
+}
+
+.dropdown-container .dropdown-drop {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown-item {
+  padding: 10px; /* Adjusted padding for better spacing */
+  margin: 0; /* Removed margin for a tighter layout */
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s; /* Smooth transition for background and color */
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.dropdown-item {
+  background-color: #f0f0f0; /* Background color on hover */
+  color: #ff0000; /* Color on hover */
+}
+
+.dropdown-item img {
+  width: 30px; /* Fixed width for icons */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.dropdown-drop a {
+  padding: 10px; /* Adjusted padding for consistency */
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: block; /* Ensure full-width clickable area */
+}
+
