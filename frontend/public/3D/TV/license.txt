@@ -1,0 +1,11 @@
+Model Information:
+* title:	Apple TV remote
+* source:	https://sketchfab.com/3d-models/apple-tv-remote-38f2339bfc974f1e81fe7b1d2b96330a
+* author:	Niilo Poutanen (https://sketchfab.com/niilo.poutanen)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Apple TV remote" (https://sketchfab.com/3d-models/apple-tv-remote-38f2339bfc974f1e81fe7b1d2b96330a) by Niilo Poutanen (https://sketchfab.com/niilo.poutanen) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

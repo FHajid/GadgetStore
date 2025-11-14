@@ -1,0 +1,242 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+.Main{
+    width: 100%;
+    height: 1780px;
+}
+
+.above{
+    display: flex;
+    width: 95%;
+    height: 650px;
+    margin: 0px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-us{
+    width: 35%;
+    height: 650px;
+    margin: auto auto;
+
+}
+
+.about-us h1{
+  padding: 40px 0px;
+}
+
+.pic-left{
+    width: 65%;
+    height: auto;
+    margin: auto;
+}
+
+#pic-left{
+  border-radius: 20px;
+}
+
+/* Main ends */
+
+/* mid */
+
+.mid{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
+  
+  .cardmen-container{
+    display: flex;
+  }
+
+  .cardmen{
+    width: 270px;
+    height: 210px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgb(52, 52, 52,0.2);
+    
+  }
+  
+  
+  .cardmen h2, .cardmen h3{
+    padding: 8px 0px ;
+    font-weight: 400;
+    font-size: 22px;
+  }
+  
+  #money {
+    font-size: 35px;
+    width: 85px;
+    height: 85px;
+    size: 35px;
+    padding: 10px;
+    margin: 0px;
+    background: rgb(25, 25, 25);
+    border-radius: 50%; /* Make it circular */
+    text-align: center;
+    border: 12px solid rgba(134, 134, 134, 0.8);
+    display: inline-flex; /* Use flexbox to center content */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+
+/* mid2 start */
+.mid2{
+  width: 100%;
+  height: 490px;
+  display: flex;
+  margin: 40px 0px;
+  justify-content: space-evenly;
+}
+
+.card-ceo{
+  width: 410px;
+  height: 390px;
+  text-align: center;
+}
+
+.card-ceo img{
+  width: 320px;
+  background-color: rgb(218, 218, 218);
+  border: 2px solid rgb(235, 235, 235);
+  border-radius: 0px;
+}
+
+/* Stripe-3 */
+
+
+.stripe-3{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: none;
+}
+
+.stripe-3, .cardmen {
+  border: none;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .Main {
+      height: auto;
+  }
+
+  .above {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+      padding: 20px;
+  }
+
+  .about-us, .pic-left {
+      width: 90%;
+      height: auto;
+      margin: 10px auto;
+  }
+
+  .pic-left img {
+      width: 100%; /* Make image responsive */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 20px; /* Keep the same border radius */
+  }
+
+  .mid {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0;
+  }
+
+  /* Container for cardmen to enable flex layout */
+
+.cardmen {
+  width: 100%; /* Full width on mobile */
+  max-width: 200px; /* Set a maximum width for individual cards */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+ /* Adjust font size for smaller screens */
+ .cardmen h2 {
+  font-size: 18px; /* Smaller font size for mobile */
+}
+
+.cardmen h3 {
+  font-size: 16px; /* Smaller font size for mobile */
+}
+
+  .mid2 {
+      flex-direction: column;
+      display: flex;
+      height: auto;
+      padding: 20px 0;
+  }
+
+  .card-ceo {
+    width: 50%;
+    height: auto;
+    margin: 0 auto 20px; /* Centers horizontally and adds space at the bottom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text content */
+}
+
+  .stripe-3 {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0;
+      
+  }
+
+  /* Adjust #money to display flexibly side by side */
+  .money-container {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+      gap: 10px; /* Add space between items */
+      justify-content: center; /* Center items */
+      padding: 10px;
+  }
+
+  #money {
+      font-size: 20px; /* Smaller font size */
+      width: 55px; /* Smaller width */
+      height: 55px; /* Smaller height */
+      padding: 5px;
+      margin: 5px; /* Add margin between items */
+  }
+
+  /* Worker section styling */
+  #worker {
+      width: 90%;
+      margin: 20px auto;
+      text-align: center;
+  }
+
+  #worker img {
+      width: 10%;
+      height: auto;
+      border-radius: 15px; /* Optional: adjust to match design */
+  }
+
+  #worker  .description {
+      margin-top: 15px;
+      font-size: 16px;
+  }   
+}
+

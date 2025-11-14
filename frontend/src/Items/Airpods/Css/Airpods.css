@@ -1,0 +1,269 @@
+
+.detail_main{
+  width: 100%;
+  height: 800px;
+}
+
+.breadcrumb{
+  width: 100%;
+  height: 40px;
+  padding: 40px 0px 0px 90px;
+  text-decoration: none;
+  color: black;
+}
+
+.breadcrumb a {
+  color: rgb(170, 170, 170);
+  text-decoration: none;
+  padding-left: 5px;
+  background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+}
+.breadcrumb a:hover{
+  color: #db4444;
+  text-decoration: none;
+  transition: 0.3s background-size;
+  background-size: 100% .1em;
+}
+
+#active-link-breadcrumb{
+  color: #db4444;
+  transition: none;
+  background: none;
+}
+
+/* Main start */
+
+.product-detail{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  margin-top: 10px;
+  border-bottom: 2px solid grey;
+}
+
+/* picture left */
+.left{
+  margin: 40px auto;
+  width: 10%;
+  height: 640px;
+}
+
+.contain-left img:hover{
+  opacity: 1;
+}
+
+.contain-left img{
+    width: 120px;
+    height: 150px;
+    border: 2px solid grey;
+    border-radius: 9px ;
+    object-fit:cover;
+    margin: 5px auto 5px auto;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* Middle Main Pic */
+
+.middle{
+  width: 35%;
+  height: 650px;
+  margin: 10px auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainpic{
+  margin: auto;
+  object-fit: fill;
+
+}
+
+.middle img{
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  object-fit: fill;
+
+}
+
+/* Kanan Deskripsi */
+
+.container-right{
+  width: 80%;
+
+}
+
+.harga h3 {
+  font-weight: bolder;
+}
+
+.harga {
+  display: flex;
+}
+
+.shopping-icon {
+  padding: 0px 20px;
+  font-size: 23px;
+}
+
+.shopping-icon  i{
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.shopping-icon :hover{
+  color: #db4444;
+  text-decoration: none;
+  transition: 0.3s background-size;
+  background-size: 100% .1em;
+}
+
+.contain-capasitas{
+  width: 70%;
+  margin: 10px 0px ;
+  display: flex;
+}
+
+.size-ram{
+  margin: 20px 8px 20px 0px;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffff;
+  background-color: rgb(180, 180, 180);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+#eye  {
+  cursor: pointer;
+  margin: 20px 10px;
+  height: 100%;
+}
+
+.deskripsion{
+  font-weight: 200;
+  font-style: italic;
+}
+
+.special{
+  border: 3px solid rgb(219, 68, 68);
+}
+
+.contain-warna{
+  width: 70%;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.warna-kelompok{
+  display: flex;
+  cursor: pointer;
+}
+
+.podswarna1, .Macbookwarna2,.Macbookwarna3,.warna4{
+  width: 30px !important;
+  height: 30px !important;
+  margin: 10px;
+  border-radius: 50%;
+  border: 2px solid rgb(180, 180, 180);
+  cursor: pointer;
+}
+
+.podswarna1:hover, .warna2:hover,.warna3:hover,.warna4:hover{
+  border: 3px solid rgb(219, 68, 68);
+}
+
+
+.podswarna1{
+  background-color: rgb(255, 255, 255);
+}
+
+.Macbookwarna2{
+  background-color: rgb(0, 0, 0);
+
+}
+
+.Macbookwarna3{
+  background-color: rgb(83, 78, 153);
+
+}
+
+.warna4{
+  background-color: rgb(21, 21, 21);
+
+}
+
+.selected {
+  border: 3px solid rgb(219, 68, 68); /* Example border for selected color */
+}
+
+
+
+
+.add-delete{
+  width: 190px;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  background-color: #f2f2f2;
+  border: 2px solid rgb(174, 174, 174);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+}
+
+.add-delete span{
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-delete span.num{
+  font-size: 35px;
+  border-right: 2px solid rgb(0, 0, 0,0.2);
+  border-left: 2px solid rgb(0, 0, 0,0.2);
+  pointer-events: none ;
+  color: rgb(255, 91, 91);
+}
+
+
+.contain-buying{
+  width: 100%;
+  height: 90px;
+  margin-top: 20px;
+  display:flex;
+}
+
+#buy{
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+
+  color: white;
+  background-color: rgb(255, 91, 91);
+  border-radius: 10px;
+  border: none;
+  margin: 0px 20px;
+  padding: 10px 0px;
+}
+
+
+
+/* Bawah item lain */
+
+.itemlain{
+  width: 100%;
+  height: 620px;
+  margin-top: 0px;
+}

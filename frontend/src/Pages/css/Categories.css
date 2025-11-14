@@ -1,0 +1,92 @@
+/* Main container for categories */
+.categories-main {
+    padding: 20px;
+    height: auto; /* Adjust height dynamically */
+}
+
+/* Category group styling remains unchanged */
+.home-categories {
+    margin-bottom: 20px;
+    height: auto;
+    border-bottom: 1px solid grey;
+}
+
+.grup-cata {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cata {
+    font-size: 22px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    height: 180px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px;
+    flex: 1 1 calc(10% - 10px);
+}
+
+.cata:hover {
+    background-color: #e9ecef;
+    transform: scale(1.05);
+}
+
+.cata i {
+    font-size: 94px;
+    color: #007bff;
+}
+
+.cata p {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Styling for product cards */
+.ProductCard {
+    display: grid; /* Use grid layout for larger screens */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between cards */
+    padding: 20px; /* Padding around the grid */
+    justify-content: center; /* Center the grid items */
+}
+
+/* Scrollable Product Items for Mobile */
+@media (max-width: 768px) {
+    .ProductCard {
+        display: flex; /* Switch to flexbox on mobile */
+        flex-direction: column; /* Stack items vertically */
+        overflow-y: auto; /* Enable vertical scrolling */
+        max-height: none; /* Remove the height restriction */
+        padding: 20px 10px; /* Adjust padding for mobile */
+        gap: 10px; /* Less gap on mobile */
+    }
+
+    .ProductCard > div {
+        flex: 0 0 auto; /* Allow products to expand based on content */
+        min-width: 100%; /* Make sure it takes full width */
+        box-sizing: border-box; /* Ensure padding is included in width */
+    }
+}
+
+@media (max-width: 500px) {
+    .ProductCard > div {
+        flex: 0 0 auto; /* Allow products to expand based on content */
+        min-width: 70%; /* Ensure full width on smaller screens */
+        min-height: auto; /* Remove fixed height to prevent cutting */
+    }
+
+    .ProductCard {
+        padding: 10px; /* Adjust padding for very small screens */
+        gap: 5px; /* Less gap on very small screens */
+    }
+}
+
+/* Hide the scrollbar */
+.ProductCard::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}

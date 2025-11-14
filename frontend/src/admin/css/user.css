@@ -1,0 +1,50 @@
+/* Admin User Page Styles */
+.admin-page-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.admin-user-main {
+    display: flex;
+    flex-grow: 1;
+}
+
+.restof {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.restof h2 {
+    margin-top: 0;
+}
+
+.table-responsive {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.remove-user{
+    width: 15%;
+    background-color: rgb(255, 79, 79);
+    margin: 0px 10px;
+}
+
+.edit-user{
+    width: 10%;
+    background-color: rgb(67, 143, 79);
+    margin: 0px 10px;
+}
+
+.w-75{
+    height: 40px;
+}
