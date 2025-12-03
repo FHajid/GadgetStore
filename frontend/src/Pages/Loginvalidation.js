@@ -1,3 +1,0 @@
-function validation (values) {
-
-}
