@@ -3,6 +3,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+// Trying to do a daily setup 
+    daily Login
+    12/09/2025
+
 First, run the development server: Test
 
 ```bash
