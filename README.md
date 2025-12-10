@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 // Trying to do a daily setup 
     daily Login
-    12/09/2025
+    12/10/2025
 
 First, run the development server: Test
 
