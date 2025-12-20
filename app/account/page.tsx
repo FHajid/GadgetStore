@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function store() {
+export default function account_dashboard() {
   return (
     <div>
       
