@@ -9,6 +9,7 @@ export default function Home() {
       
       <h1>Welcome to the Home Page</h1>
       <p>This is a sample Next.js application.</p>
+      <h2>TEST</h2>
       
     </div>
   );
