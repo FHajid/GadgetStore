@@ -1,47 +1,124 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🎧 GadgetStore 3D — Interactive Electronics E-Commerce
 
-## Getting Started
+Welcome to GadgetStore 3D, a modern e-commerce web application designed for electronic gadgets and tech products. Built with Next.js, TypeScript, and Tailwind CSS, this platform provides an immersive shopping experience by integrating dynamic 3D product viewports—allowing customers to rotate, inspect, and experience products in full 360° view before buying.
 
-// Trying to do a daily setup 
-    daily Login
-    12/10/2025
+✨ Features
 
-First, run the development server: Test
+📦 Interactive 3D Viewers: Real-time 3D models (.glb/.gltf) on product detail pages with full camera controls, zoom, and auto-rotation.
 
-```bash
+📱 Augmented Reality (AR): Mobile-ready AR preview using <model-viewer> so users can place gadgets into their real-world environment.
+
+⚡ High Performance: Built on Next.js with server-side rendering (SSR) and client-side optimization for smooth 3D frame rates.
+
+🎨 Modern & Clean UI: Styled with Tailwind CSS for a sleek, responsive dark/light mode friendly layout.
+
+🛒 E-Commerce Engine: Detailed product listings, category filters, and product details with fallbacks for standard 2D image previews.
+
+🛠️ Tech Stack
+
+Framework: Next.js (App Router)
+
+Language: TypeScript
+
+Styling: Tailwind CSS
+
+3D Graphics:
+
+@google/model-viewer (Lightweight AR / 3D web component)
+
+Three.js / @react-three/fiber
+
+Version Control: Git & GitHub
+
+🚀 Getting Started
+
+Follow these steps to run the project locally on your machine:
+
+1. Prerequisites
+
+Ensure you have Node.js (v18.x or higher) and npm installed:
+
+node -v
+npm -v
+
+
+2. Clone the Repository
+
+git clone https://github.com/FHajid/GadgetStore.git
+cd GadgetStore
+
+
+3. Install Dependencies
+
+npm install
+# or
+yarn install
+
+
+4. Add Your 3D Models
+
+Place your compressed .glb or .gltf 3D files into the public directory:
+
+public/
+└── models/
+    ├── headphones.glb
+    ├── smartphone.glb
+    └── smartwatch.glb
+
+
+5. Start the Development Server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-MY project boss
->>>>>>> 2c0b338a62be024e74005dd0487b030f212ba602
 
 
-testes
+Open http://localhost:3000 in your browser to view the application.
+
+📂 Project Structure
+
+GadgetStore/
+├── app/
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── ProductCard.tsx
+│   │   └── Product3DViewer.tsx   # Client-side 3D viewport component
+│   ├── data/
+│   │   └── products.ts           # Product catalog schema & mock data
+│   ├── product/[id]/
+│   │   └── page.tsx              # Product Detail Page (PDP)
+│   ├── layout.tsx
+│   └── page.tsx                  # Storefront homepage
+├── public/
+│   ├── images/                   # Static thumbnails
+│   └── models/                   # 3D GLTF/GLB models
+├── package.json
+├── tsconfig.json
+└── README.md
+
+
+💡 How 3D Models Are Loaded
+
+Products in app/data/products.ts include optional model3d asset paths alongside standard thumbnail images:
+
+export const products = [
+  {
+    id: "gadget-1",
+    name: "Wireless Noise-Canceling Headphones",
+    price: 199.99,
+    image: "/images/headphones.jpg",
+    model3d: "/models/headphones.glb", // Path to 3D asset
+    description: "Experience spatial audio and active noise cancellation."
+  }
+];
+
+
+When a user visits a product page, if model3d is defined, the page dynamically renders the interactive Product3DViewer component with automatic fallback to static images.
+
+🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check out the issues page or submit a pull request.
+
+📄 License
+
+Distributed under the MIT License. See LICENSE for more details.
