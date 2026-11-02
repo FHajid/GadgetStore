@@ -73,25 +73,35 @@ npm run dev
 
 Open http://localhost:3000 in your browser to view the application.
 
-📂 Project Structure
-
 GadgetStore/
 ├── app/
+│   ├── (store)/                 # Customer Storefront Routes
+│   │   ├── page.tsx             # Store Homepage
+│   │   ├── product/[id]/
+│   │   │   └── page.tsx         # Product Detail Page (3D Viewer)
+│   │   └── cart/                # Shopping Cart Page
+│   ├── admin/                   # Admin Panel Routes
+│   │   ├── page.tsx             # Admin Overview & Analytics
+│   │   ├── products/            # Admin Inventory & CRUD
+│   │   │   ├── page.tsx
+│   │   │   └── new/page.tsx     # Add New Product + 3D Upload
+│   │   └── orders/              # Order Management Dashboard
+│   ├── api/                     # Next.js API Routes & Server Actions
+│   │   ├── products/
+│   │   └── upload-3d/           # 3D Asset Upload Endpoint
 │   ├── components/
-│   │   ├── Navbar.tsx
-│   │   ├── ProductCard.tsx
-│   │   └── Product3DViewer.tsx   # Client-side 3D viewport component
-│   ├── data/
-│   │   └── products.ts           # Product catalog schema & mock data
-│   ├── product/[id]/
-│   │   └── page.tsx              # Product Detail Page (PDP)
-│   ├── layout.tsx
-│   └── page.tsx                  # Storefront homepage
+│   │   ├── store/
+│   │   │   └── Product3DViewer.tsx
+│   │   └── admin/
+│   │       ├── AdminSidebar.tsx
+│   │       └── ModelUploadZone.tsx
+│   └── layout.tsx
 ├── public/
-│   ├── images/                   # Static thumbnails
-│   └── models/                   # 3D GLTF/GLB models
+│   ├── images/                  # Static product thumbnails
+│   └── models/                  # Local fallback 3D assets (.glb)
+├── prisma/
+│   └── schema.prisma            # Database Schema (Products, Orders, Users)
 ├── package.json
-├── tsconfig.json
 └── README.md
 
 
