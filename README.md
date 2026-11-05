@@ -78,7 +78,7 @@ public/
 npm run dev
 
 ```
-DAILY LOGIN
+DAILY LOGIN II
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
