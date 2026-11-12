@@ -78,7 +78,9 @@ public/
 npm run dev
 
 ```
-DAILY LOGIN IV
+DAILY LOGIN V 
+ADDED TO NEXT.JS
+
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
