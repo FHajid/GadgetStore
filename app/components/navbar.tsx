@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2 sm:gap-4">
           
           <Link 
-            href="/login" 
+            href="/auth/login" 
             aria-label="Account"
             className="p-2 text-gray-600 hover:text-blue-600 hover:bg-gray-100 rounded-full transition"
           >
